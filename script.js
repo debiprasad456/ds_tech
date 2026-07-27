@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DS TECH - INTERACTIVE LANDING SCRIPT
+   DS WEB STORE - INTERACTIVE LANDING SCRIPT
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
