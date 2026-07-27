@@ -10,12 +10,13 @@
 
 ## 🌟 Key Features
 
-- 🎨 **Modern Pristine Light Design System**: Clean typography, glassmorphism UI components, dynamic gradient text, and responsive cards built with pure CSS.
+- 🌙 **Navy Blue Dark Mode**: Seamless theme switcher with a deep Navy Blue color scheme (`#0A1128`), persistent `localStorage` preference, and smooth color transitions.
+- 🎨 **Modern Pristine Light & Dark Design System**: Clean typography, glassmorphism UI components, dynamic gradient text, and responsive cards built with pure CSS.
 - ⚡ **Interactive Tech Stack Showcase**: Dynamic tabbed filtering for Frontend, Backend, Database, and Developer tools.
 - 🧮 **Instant Price Estimator & Quote Calculator**: Real-time project cost calculation based on website category selection (Portfolio, Corporate, E-commerce, Custom App) and optional add-on features with automated package pre-fill.
 - 💼 **Comprehensive Services Catalog**: Detailed offerings for Corporate Websites, E-commerce Stores, Educational Portals, Healthcare Sites, Custom Web Applications, and Portfolios.
 - 📱 **Fully Mobile Responsive**: Custom header with smooth scroll navigation and an animated mobile toggle menu drawer.
-- 🔔 **Toast Notification System**: Instant interactive feedback on quote selection and form submission.
+- 🔔 **Toast Notification System**: Instant interactive feedback on theme changes, quote selection, and form submission.
 - 💬 **Direct WhatsApp & Inquiry Integration**: Quick communication channels and support during business hours (**9:30 AM – 6:30 PM**).
 
 ---
@@ -37,9 +38,8 @@
 ```text
 ds tech/
 ├── index.html        # Main HTML structure & semantic layout
-├── styles.css        # Core light mode design system tokens & styles
-├── script.js        # Interactive scripts (calculator, tabs, mobile menu, toast)
-├── Logo.jpg          # Brand logo asset
+├── styles.css        # Core light & navy dark mode design system tokens & styles
+├── script.js        # Interactive scripts (calculator, theme toggle, tabs, mobile menu, toast)
 └── README.md         # Documentation
 ```
 

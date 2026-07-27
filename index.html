@@ -24,10 +24,15 @@
        ========================================================================== -->
   <header class="header" id="header">
     <div class="container nav-container">
-      <a href="#home" class="brand-logo-wrapper">
-        <img src="Logo.jpg" alt="DS Web Store Logo" class="brand-logo-img">
-        <span class="brand-name">DS <span>Web Store</span></span>
-      </a>
+      <div class="brand-left-group">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="#home" class="brand-logo-wrapper">
+          <div class="brand-logo-icon"><i class="fa-solid fa-store"></i></div>
+          <span class="brand-name">DS <span>Web Store</span></span>
+        </a>
+      </div>
 
       <nav>
         <ul class="nav-menu" id="navMenu">
@@ -41,9 +46,8 @@
       </nav>
 
       <div class="header-actions">
-        <a href="#calculator" class="btn btn-primary">Get a Quote</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Navy Dark Mode" title="Toggle Navy Dark Mode">
+          <i class="fa-solid fa-moon"></i>
         </button>
       </div>
     </div>
@@ -478,19 +482,19 @@
             <div>
               <h4 class="calc-group-title">1. Select Website Type</h4>
               <div class="calc-type-grid">
-                <div class="calc-type-card selected" data-price="199" data-time="2-3 Days">
+                <div class="calc-type-card selected" data-price="1999" data-time="2-3 Days">
                   <i class="fa-solid fa-user"></i>
                   <span>Portfolio</span>
                 </div>
-                <div class="calc-type-card" data-price="349" data-time="3-5 Days">
+                <div class="calc-type-card" data-price="3499" data-time="3-5 Days">
                   <i class="fa-solid fa-building"></i>
                   <span>Corporate</span>
                 </div>
-                <div class="calc-type-card" data-price="499" data-time="5-7 Days">
+                <div class="calc-type-card" data-price="4999" data-time="5-7 Days">
                   <i class="fa-solid fa-cart-shopping"></i>
                   <span>E-commerce</span>
                 </div>
-                <div class="calc-type-card" data-price="699" data-time="7-10 Days">
+                <div class="calc-type-card" data-price="6999" data-time="7-10 Days">
                   <i class="fa-solid fa-code"></i>
                   <span>Custom App</span>
                 </div>
@@ -501,20 +505,20 @@
               <h4 class="calc-group-title">2. Choose Add-on Features</h4>
               <div class="calc-checkboxes">
                 <label class="checkbox-label">
-                  <input type="checkbox" value="50" class="addon-checkbox">
-                  <span>Custom Admin Dashboard (+$50)</span>
+                  <input type="checkbox" value="500" class="addon-checkbox">
+                  <span>Custom Admin Dashboard (+₹500)</span>
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" value="40" class="addon-checkbox">
-                  <span>Payment Gateway Integration (+$40)</span>
+                  <input type="checkbox" value="400" class="addon-checkbox">
+                  <span>Payment Gateway Integration (+₹400)</span>
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" value="30" class="addon-checkbox">
-                  <span>Advanced SEO & Analytics (+$30)</span>
+                  <input type="checkbox" value="300" class="addon-checkbox">
+                  <span>Advanced SEO & Analytics (+₹300)</span>
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" value="25" class="addon-checkbox">
-                  <span>WhatsApp Chat Integration (+$25)</span>
+                  <input type="checkbox" value="250" class="addon-checkbox">
+                  <span>WhatsApp Chat Integration (+₹250)</span>
                 </label>
               </div>
             </div>
@@ -528,7 +532,7 @@
             </div>
 
             <div class="calc-price-display">
-              <div class="calc-price-val" id="calcTotalPrice">$199</div>
+              <div class="calc-price-val" id="calcTotalPrice">₹1,999</div>
               <div class="calc-time-val" id="calcTurnaround">Estimated Delivery: 2-3 Days</div>
             </div>
 
@@ -622,7 +626,7 @@
             </div>
 
             <button type="submit" class="btn btn-accent" style="width: 100%;">
-              <i class="fa-solid fa-paper-plane"></i> Send Request Now
+              <i class="fa-brands fa-whatsapp"></i> Send Request via WhatsApp
             </button>
           </form>
         </div>
@@ -640,7 +644,7 @@
         
         <div class="footer-brand">
           <div class="brand-logo-wrapper">
-            <img src="Logo.jpg" alt="DS Web Store Logo" class="brand-logo-img">
+            <div class="brand-logo-icon"><i class="fa-solid fa-store"></i></div>
             <span class="brand-name">DS <span>Web Store</span></span>
           </div>
           <p>We build fast, responsive, and high-converting websites and web applications tailored for business growth.</p>

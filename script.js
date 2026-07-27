@@ -5,6 +5,46 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* --------------------------------------------------------------------------
+     0. NAVY DARK MODE THEME TOGGLE
+     -------------------------------------------------------------------------- */
+  const themeToggle = document.getElementById('themeToggle');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function updateThemeIcon(isDark) {
+    if (!themeToggle) return;
+    const icon = themeToggle.querySelector('i');
+    if (icon) {
+      if (isDark) {
+        icon.className = 'fa-solid fa-sun';
+        themeToggle.title = 'Switch to Light Mode';
+      } else {
+        icon.className = 'fa-solid fa-moon';
+        themeToggle.title = 'Switch to Navy Dark Mode';
+      }
+    }
+  }
+
+  // Load saved preference or browser setting
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    updateThemeIcon(true);
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    updateThemeIcon(false);
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme === 'dark');
+    });
+  }
+
+  /* --------------------------------------------------------------------------
      1. STICKY HEADER SCROLL EFFECT
      -------------------------------------------------------------------------- */
   const header = document.getElementById('header');
@@ -97,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const calcTurnaround = document.getElementById('calcTurnaround');
   const btnOrderQuote = document.getElementById('btnOrderQuote');
 
-  let basePrice = 199;
+  let basePrice = 1999;
   let baseTime = '2-3 Days';
   let selectedType = 'Portfolio';
 
@@ -109,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    if (calcTotalPrice) calcTotalPrice.textContent = `$${total}`;
+    if (calcTotalPrice) calcTotalPrice.textContent = `₹${total.toLocaleString('en-IN')}`;
     if (calcTurnaround) calcTurnaround.textContent = `Estimated Delivery: ${baseTime}`;
   }
 
@@ -149,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contactSec.scrollIntoView({ behavior: 'smooth' });
       }
 
-      showToast(`Selected ${selectedType} package ($${calcTotalPrice.textContent.replace('$', '')}). Fill out details to submit!`, 'info');
+      showToast(`Selected ${selectedType} package (${calcTotalPrice ? calcTotalPrice.textContent : ''}). Fill out details to submit!`, 'info');
     });
   }
 
@@ -183,8 +223,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('userName').value;
       const email = document.getElementById('userEmail').value;
       const service = document.getElementById('serviceSelect').value;
+      const message = document.getElementById('userMessage').value;
 
-      showToast(`Thank you, ${name}! Your request for "${service}" has been received. We will contact you at ${email} shortly.`, 'success');
+      // Format clean message for WhatsApp
+      const whatsappText = `Hello DS Web Store!\n\n*Name:* ${name}\n*Email:* ${email}\n*Service Requested:* ${service}\n*Project Details:* ${message}`;
+      const encodedText = encodeURIComponent(whatsappText);
+
+      // Open WhatsApp directly
+      const whatsappUrl = `https://wa.me/?text=${encodedText}`;
+      window.open(whatsappUrl, '_blank');
+
       contactForm.reset();
     });
   }
