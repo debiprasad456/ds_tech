@@ -226,13 +226,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('userMessage').value;
 
       // Format clean message for WhatsApp
-      const whatsappText = `Hello DS Web Store!\n\n*Name:* ${name}\n*Email:* ${email}\n*Service Requested:* ${service}\n*Project Details:* ${message}`;
+      const whatsappText = `Hello DS Infotech!\n\n*Name:* ${name}\n*Email:* ${email}\n*Service Requested:* ${service}\n*Project Details:* ${message}`;
       const encodedText = encodeURIComponent(whatsappText);
 
-      // Open WhatsApp directly
-      const whatsappUrl = `https://wa.me/?text=${encodedText}`;
+      // Open WhatsApp directly to +91 8260054398
+      const whatsappUrl = `https://wa.me/918260054398?text=${encodedText}`;
       window.open(whatsappUrl, '_blank');
 
+      showToast('Opening WhatsApp to send your inquiry...');
       contactForm.reset();
     });
   }

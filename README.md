@@ -1,8 +1,8 @@
-# 🛍️ DS Web Store
+# 💻 DS Infotech
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-ds--tech--pi.vercel.app-0066FF?style=flat&logo=vercel)](https://ds-tech-pi.vercel.app/) [![Website Status](https://img.shields.io/badge/Status-Active-brightgreen)](#) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#) [![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS-orange)](#)
 
-> **DS Web Store** (Diverse Solutions) is a modern, high-performance, and responsive landing page for custom web development services and digital solutions.
+> **DS Infotech** (Diverse Solutions) is a modern, high-performance, and responsive landing page for custom web development services and digital solutions.
 
 🌐 **Live Demo URL**: [https://ds-tech-pi.vercel.app/](https://ds-tech-pi.vercel.app/)
 
@@ -17,7 +17,7 @@
 - 💼 **Comprehensive Services Catalog**: Detailed offerings for Corporate Websites, E-commerce Stores, Educational Portals, Healthcare Sites, Custom Web Applications, and Portfolios.
 - 📱 **Fully Mobile Responsive**: Custom header with smooth scroll navigation and an animated mobile toggle menu drawer.
 - 🔔 **Toast Notification System**: Instant interactive feedback on theme changes, quote selection, and form submission.
-- 💬 **Direct WhatsApp & Inquiry Integration**: Quick communication channels and support during business hours (**9:30 AM – 6:30 PM**).
+- 💬 **Direct Contact Info & Inquiry Form**: Easy communication channels with dedicated support during business hours (**9:30 AM – 6:30 PM**).
 
 ---
 
@@ -62,9 +62,9 @@ No build tools or server dependencies required! You can view and edit the projec
 ## 🕒 Support & Inquiries
 
 - **Dedicated Support Hours**: 9:30 AM – 6:30 PM
-- **Email**: `contact@dswebstore.com`
-- **WhatsApp**: Available via direct site link
+- **Email**: `contact@dsinfotech.com`
+- **WhatsApp**: [+91 8260054398](https://wa.me/918260054398)
 
 ---
 
-© 2026 **DS Web Store** (Diverse Solutions). All rights reserved.
+© 2026 **DS Infotech** (Diverse Solutions). All rights reserved.
