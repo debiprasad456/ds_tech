@@ -195,6 +195,7 @@ button {
 .section-title span {
   background: var(--grad-primary);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -490,6 +491,7 @@ button {
 .hero-headline span.gradient-text {
   background: var(--grad-primary);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
