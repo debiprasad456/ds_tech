@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const calcSelectedTabBadge = document.getElementById('calcSelectedTabBadge');
   const btnOrderQuote = document.getElementById('btnOrderQuote');
 
-  let basePrice = 1999;
+  let basePrice = 2999;
   let baseTime = '2-3 Days';
   let selectedType = 'Website - Portfolio';
 
